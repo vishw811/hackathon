@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - FutureLearn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-graduation-cap"></i>
+                <span>FutureLearn</span>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active">
+                    <a href="#overview"><i class="fas fa-home"></i> Overview</a>
+                </li>
+                <li>
+                    <a href="#my-courses"><i class="fas fa-book"></i> My Courses</a>
+                </li>
+                <li>
+                    <a href="#progress"><i class="fas fa-chart-line"></i> Progress</a>
+                </li>
+                <li>
+                    <a href="#schedule"><i class="fas fa-calendar"></i> Schedule</a>
+                </li>
+                <li>
+                    <a href="#messages"><i class="fas fa-envelope"></i> Messages</a>
+                </li>
+                <li>
+                    <a href="#profile"><i class="fas fa-user"></i> Profile</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search courses...">
+                </div>
+                <div class="user-menu">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="profile-dropdown">
+                        <img src="https://via.placeholder.com/40" alt="Profile" class="profile-img">
+                        <span>John Doe</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Welcome Section -->
+                <section class="welcome-section">
+                    <h1>Welcome back, John!</h1>
+                    <p>Continue your learning journey</p>
+                </section>
+
+                <!-- Progress Overview -->
+                <section class="progress-overview">
+                    <div class="progress-card">
+                        <div class="progress-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <div class="progress-info">
+                            <h3>Courses in Progress</h3>
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <div class="progress-card">
+                        <div class="progress-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="progress-info">
+                            <h3>Completed Courses</h3>
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="progress-card">
+                        <div class="progress-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="progress-info">
+                            <h3>Achievement Points</h3>
+                            <p>850</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Current Courses -->
+                <section class="current-courses">
+                    <h2>Current Courses</h2>
+                    <div class="course-grid">
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Course">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="course-info">
+                                <h3>Web Development Fundamentals</h3>
+                                <p>Next lesson: JavaScript Basics</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 2 hours left</span>
+                                    <span><i class="fas fa-calendar"></i> Due in 3 days</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Course">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 45%"></div>
+                                </div>
+                            </div>
+                            <div class="course-info">
+                                <h3>Data Science Basics</h3>
+                                <p>Next lesson: Data Analysis</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 4 hours left</span>
+                                    <span><i class="fas fa-calendar"></i> Due in 5 days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Upcoming Schedule -->
+                <section class="upcoming-schedule">
+                    <h2>Upcoming Schedule</h2>
+                    <div class="schedule-list">
+                        <div class="schedule-item">
+                            <div class="schedule-time">
+                                <span class="date">Today</span>
+                                <span class="time">10:00 AM</span>
+                            </div>
+                            <div class="schedule-content">
+                                <h3>JavaScript Basics</h3>
+                                <p>Web Development Fundamentals</p>
+                            </div>
+                            <button class="btn-join">Join Now</button>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">
+                                <span class="date">Tomorrow</span>
+                                <span class="time">2:00 PM</span>
+                            </div>
+                            <div class="schedule-content">
+                                <h3>Data Analysis</h3>
+                                <p>Data Science Basics</p>
+                            </div>
+                            <button class="btn-join">Join Now</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Learning Assistant -->
+                <section class="ai-learning-assistant">
+                    <div class="section-header">
+                        <h2>AI Learning Assistant</h2>
+                        <button class="btn-primary">
+                            <i class="fas fa-robot"></i> Ask AI
+                        </button>
+                    </div>
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="message ai">
+                                <div class="message-content">
+                                    Hello! I'm your AI learning assistant. How can I help you today?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Ask me anything about your courses..." id="chatInput">
+                            <button class="btn-primary" id="sendMessage">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html> 
